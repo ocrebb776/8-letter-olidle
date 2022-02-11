@@ -73,8 +73,8 @@ body {
 .box {
   max-width: 15vw;
   max-height: 15vw;
-  min-width: 8vw;
-  min-height: 8vw;
+  min-width: 10vw;
+  min-height: 10vw;
   border: 0.5vw solid #4f4f52;
   margin: 0.6vw;
   background-color: #121213;
@@ -82,7 +82,6 @@ body {
   font-size: 7vw;
   color: white;
   margin-left: 0vw;
-  margin-bottom: 0vh;
 }
 table {
   margin-left: auto;
