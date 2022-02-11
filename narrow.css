@@ -3,6 +3,9 @@ body {
   background-color: #121213;
   font-size: 0px;
 }
+.small {
+  font-size: 2vw;
+}
 .header {
   text-align: center;
   height: 6.2vh;

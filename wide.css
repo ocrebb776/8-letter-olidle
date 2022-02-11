@@ -2,7 +2,9 @@ body {
   font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
   background-color: #121213;
 }
-
+.small {
+  font-size: 2vw;
+}
 .header {
   text-align: center;
   height: 6.2vh;
