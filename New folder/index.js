@@ -117,7 +117,6 @@ let array = correct.split('')
 console.log(array)
 let enter
 
-
 const orange = '#b59d3b'
 const green = '#538d4e'
 const gray = '#4f4f52'
