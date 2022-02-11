@@ -4,7 +4,6 @@ var epocDate = new Date(new Date().getTime() / 1000)
 var res = Math.abs(current_date - epocDate) / 1000
 let days = Math.floor(res / 86400)
 days -= 19015
-alert(days)
 function orangef(cell) {
   document.getElementById(cell).style.backgroundColor = orange
   document.getElementById(cell).style.border = orange
@@ -60,6 +59,12 @@ function win() {
   document.getElementById('yay').style.height = '70vh'
   delay(10).then(() => hidewin())
 }
+function norand() {
+  alert('correct word has been changed')
+  correct = random[Math.floor(Math.random() * random.length)]
+  console.log(array)
+  array = correct.split('')
+}
 const random = [
   'ABSOLUTE',
   'CRITICAL',
@@ -76,9 +81,35 @@ const random = [
   'ABROOKED',
   'ABJECTED',
   'AARDVARK',
+  'COMPARER',
+  'SINGULAR',
+  'STALKING',
+  'UNSETTLE',
+  'EMPHASIS',
+  'SHORTAGE',
+  'SHUFFLED',
+  'PARANOID',
+  'VELOSITY',
+  'ATTACKED',
+  'CHAMPION',
+  'EXERSIZE',
+  'DESCRIBE',
+  'ALTHOUGH',
+  'GREETING',
+  'DAUGHTER',
+  'EMPERESS',
+  'VISITING',
+  'VALUABLE',
 ]
-let correct = random[days]
-
+let correct
+let isrand = 'no'
+if (isrand == 'no') {
+  if (days < random.length) {
+    correct = random[days]
+  } else {
+    alert('we do not have any words for today')
+  }
+}
 let stage = 0
 let ent = []
 let array = correct.split('')
