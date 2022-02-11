@@ -1,3 +1,10 @@
+var current_date, epocDate
+current_date = new Date()
+var epocDate = new Date(new Date().getTime() / 1000)
+var res = Math.abs(current_date - epocDate) / 1000
+let days = Math.floor(res / 86400)
+days -= 19015
+alert(days)
 function orangef(cell) {
   document.getElementById(cell).style.backgroundColor = orange
   document.getElementById(cell).style.border = orange
@@ -53,11 +60,24 @@ function win() {
   document.getElementById('yay').style.height = '70vh'
   delay(10).then(() => hidewin())
 }
-const random = ['ABSOLUTE', 'CRITICAL']
-
-let items = random[Math.floor(Math.random() * random.length)]
-
-let correct = random[Math.floor(Math.random() * random.length)]
+const random = [
+  'ABSOLUTE',
+  'CRITICAL',
+  'CELLULAR',
+  'ROSEWORM',
+  'ASSESSED',
+  'HONESTLY',
+  'CALENDAR',
+  'CLASSMAN',
+  'SALIVATE',
+  'PUNCTURE',
+  'CULPRITS',
+  'CUITTLED',
+  'ABROOKED',
+  'ABJECTED',
+  'AARDVARK',
+]
+let correct = random[days]
 
 let stage = 0
 let ent = []
