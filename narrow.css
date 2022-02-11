@@ -51,6 +51,7 @@ body {
   float: left;
   height: 2vh;
   margin-left: 5vw;
+  position: absolute;
 }
 .y {
   text-align: center;
