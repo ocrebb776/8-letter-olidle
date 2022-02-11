@@ -48,6 +48,10 @@ body {
 }
 .qmark {
   height: 2vh;
+  position: absolute;
+  margin-top: 1vh;
+  float: left;
+  margin-left: 5vw;
 }
 .y {
   text-align: center;
