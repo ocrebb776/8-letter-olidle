@@ -17,7 +17,16 @@ body {
   margin-right: 20vw;
   position: absolute;
 }
-
+.random {
+  opacity: 100;
+  background-color: #121213;
+  border: none;
+  z-index: 1;
+  position: absolute;
+  margin-top: 1vh;
+  float: left;
+  margin-left: 5vw;
+}
 .nope {
   text-align: center;
   height: 6.2vh;
