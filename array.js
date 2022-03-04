@@ -1,4 +1,5 @@
 const word = [
+'AEIOURGT'
   'AARDVARK',
   'AARDWOLF',
   'AASVOGEL',
