@@ -68,7 +68,7 @@ function win() {
   document.getElementById('yay').style.width = '70vw'
   document.getElementById('yay').style.fontSize = '2vh'
   document.getElementById('yay').style.height = '70vh'
-  document.getElementById('hide').style.width = '6vw'
+  document.getElementById('hide').style.width = '90%'
   document.getElementById('hide').style.fontSize = '2vh'
   document.getElementById('hide').style.height = '4vh'
   delay(10).then(() => hidewin())
