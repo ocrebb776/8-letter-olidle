@@ -3,7 +3,6 @@
 <link rel="stylesheet" media="screen and (min-width: 750px)" href="wide.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" media="screen and (max-width: 750px)" href="narrow.css">
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="index.js"></script>
 <script src="array.js"></script>
@@ -15,123 +14,130 @@
 </script>
 
 <body>
-    <div class="header">
-        <div class="wordle"><b>OLIDLE<div class="small">8-letters</div></div></div>
-    <img class="qmark" src="question.svg"><img class="stats" src="stats.svg"><img class="settings" src="settings.svg"></img></img></img></b><br>
-            <div class="b"><b>
-<table>
+  <div class="header">
+    <div class="wordle"><b>OLIDLE<div class="small">8-letters</div>
+    </div>
+  </div>
+  <img class="qmark" src="question.svg"><img class="stats" src="stats.svg"><img class="settings"
+    src="settings.svg"></img></img></img></b><br>
+  <div class="b"><b>
+      <table>
 
-  <tr>
-    <th><button class="box first" onclick="display('a')"id="a1"> </button></th>
-    <th><button class="box first" id="a2"> </button></th>
-    <th><button class="box first" id="a3"> </button></th>
-    <th><button class="box first" id="a4"> </button></th>
-    <th><button class="box first" id="a5"> </button></th>
-    <th><button class="box first" id="a6"> </button></th>
-    <th><button class="box first" id="a7"> </button></th>
-    <th><button class="box first" id="a8"> </button></th>
-  </tr>
+        <tr>
+          <th><button class="box first" onclick="display('a')" id="a1"> </button></th>
+          <th><button class="box first" id="a2"> </button></th>
+          <th><button class="box first" id="a3"> </button></th>
+          <th><button class="box first" id="a4"> </button></th>
+          <th><button class="box first" id="a5"> </button></th>
+          <th><button class="box first" id="a6"> </button></th>
+          <th><button class="box first" id="a7"> </button></th>
+          <th><button class="box first" id="a8"> </button></th>
+        </tr>
 
-  <tr>
-    <th><button class="box" onclick="display('b')"id="b1"> </button></th>
-    <th><button class="box" onclick="display('b')"id="b2"> </button></th>
-    <th><button class="box" onclick="display('b')"id="b3"> </button></th>
-    <th><button class="box" onclick="display('b')"id="b4"> </button></th>
-    <th><button class="box" onclick="display('b')"id="b5"> </button></th>
-    <th><button class="box first" id="b6"> </button></th>
-    <th><button class="box first" id="b7"> </button></th>
-    <th><button class="box first" id="b8"> </button></th>
-  </tr>
+        <tr>
+          <th><button class="box" onclick="display('b')" id="b1"> </button></th>
+          <th><button class="box" onclick="display('b')" id="b2"> </button></th>
+          <th><button class="box" onclick="display('b')" id="b3"> </button></th>
+          <th><button class="box" onclick="display('b')" id="b4"> </button></th>
+          <th><button class="box" onclick="display('b')" id="b5"> </button></th>
+          <th><button class="box first" id="b6"> </button></th>
+          <th><button class="box first" id="b7"> </button></th>
+          <th><button class="box first" id="b8"> </button></th>
+        </tr>
 
-  <tr>
-  <th><button class="box" onclick="display('c')" id="c1"> </button></th>
-   <th><button class="box" onclick="display('c')"id="c2"> </button></th>
-   <th><button class="box" onclick="display('c')"id="c3"> </button></th>
-   <th><button class="box" onclick="display('c')"id="c4"> </button></th>
-   <th><button class="box" onclick="display('c')"id="c5"> </button></th>
-   <th><button class="box first" id="c6"> </button></th>
-   <th><button class="box first" id="c7"> </button></th>
-   <th><button class="box first" id="c8"> </button></th>
-  </tr>
+        <tr>
+          <th><button class="box" onclick="display('c')" id="c1"> </button></th>
+          <th><button class="box" onclick="display('c')" id="c2"> </button></th>
+          <th><button class="box" onclick="display('c')" id="c3"> </button></th>
+          <th><button class="box" onclick="display('c')" id="c4"> </button></th>
+          <th><button class="box" onclick="display('c')" id="c5"> </button></th>
+          <th><button class="box first" id="c6"> </button></th>
+          <th><button class="box first" id="c7"> </button></th>
+          <th><button class="box first" id="c8"> </button></th>
+        </tr>
 
-  <tr>
-    <th><button class="box" onclick="display('d')"id="d1"> </button></th>
-    <th><button class="box" onclick="display('d')"id="d2"> </button></th>
-    <th><button class="box" onclick="display('d')"id="d3"> </button></th>
-    <th><button class="box" onclick="display('d')"id="d4"> </button></th>
-    <th><button class="box" onclick="display('d')"id="d5"> </button></th>
-    <th><button class="box first" id="d6"> </button></th>
-    <th><button class="box first" id="d7"> </button></th>
-    <th><button class="box first" id="d8"> </button></th>
-  </tr>
+        <tr>
+          <th><button class="box" onclick="display('d')" id="d1"> </button></th>
+          <th><button class="box" onclick="display('d')" id="d2"> </button></th>
+          <th><button class="box" onclick="display('d')" id="d3"> </button></th>
+          <th><button class="box" onclick="display('d')" id="d4"> </button></th>
+          <th><button class="box" onclick="display('d')" id="d5"> </button></th>
+          <th><button class="box first" id="d6"> </button></th>
+          <th><button class="box first" id="d7"> </button></th>
+          <th><button class="box first" id="d8"> </button></th>
+        </tr>
 
-  <tr>
-    <th><button class="box" onclick="display('e')"id="e1"> </button></th>
-    <th><button class="box" onclick="display('e')"id="e2"> </button></th>
-    <th><button class="box" onclick="display('e')"id="e3"> </button></th>
-    <th><button class="box" onclick="display('e')"id="e4"> </button></th>
-    <th><button class="box" onclick="display('e')"id="e5"> </button></th>
-    <th><button class="box first" id="e6"> </button></th>
-    <th><button class="box first" id="e7"> </button></th>
-    <th><button class="box first" id="e8"> </button></th>
-  </tr>
+        <tr>
+          <th><button class="box" onclick="display('e')" id="e1"> </button></th>
+          <th><button class="box" onclick="display('e')" id="e2"> </button></th>
+          <th><button class="box" onclick="display('e')" id="e3"> </button></th>
+          <th><button class="box" onclick="display('e')" id="e4"> </button></th>
+          <th><button class="box" onclick="display('e')" id="e5"> </button></th>
+          <th><button class="box first" id="e6"> </button></th>
+          <th><button class="box first" id="e7"> </button></th>
+          <th><button class="box first" id="e8"> </button></th>
+        </tr>
 
-  <tr>
-    <th><button class="box"  onclick="display('f')"id="f1"> </button></th>
-    <th><button class="box"  onclick="display('f')"id="f2"> </button></th>
-    <th><button class="box"  onclick="display('f')"id="f3"> </button></th>
-    <th><button class="box"  onclick="display('f')"id="f4"> </button></th>
-    <th><button class="box"  onclick="display('f')"id="f5"> </button></th>
-    <th><button class="box first" id="f6"> </button></th>
-    <th><button class="box first" id="f7"> </button></th>
-    <th><button class="box first" id="f8"> </button></th>
-  </tr>
+        <tr>
+          <th><button class="box" onclick="display('f')" id="f1"> </button></th>
+          <th><button class="box" onclick="display('f')" id="f2"> </button></th>
+          <th><button class="box" onclick="display('f')" id="f3"> </button></th>
+          <th><button class="box" onclick="display('f')" id="f4"> </button></th>
+          <th><button class="box" onclick="display('f')" id="f5"> </button></th>
+          <th><button class="box first" id="f6"> </button></th>
+          <th><button class="box first" id="f7"> </button></th>
+          <th><button class="box first" id="f8"> </button></th>
+        </tr>
 
-  </table>
-</b> <b> </div><div class="c">
-  <button class="key"  onclick="key('q')"id="q">Q</button>
-  <button class="key"  onclick="key('w')"id="w">W</button>
-  <button class="key"  onclick="key('e')"id="e">E</button>
-  <button class="key"  onclick="key('r')"id="r">R</button>
-  <button class="key"  onclick="key('t')"id="t">T</button>
-  <button class="key"  onclick="key('y')"id="y">Y</button>
-  <button class="key"  onclick="key('u')"id="u">U</button>
-  <button class="key"  onclick="key('i')"id="i">I</button>
-  <button class="key"  onclick="key('o')"id="o">O</button>
-  <button class="key"  onclick="key('p')"id="p">P</button><BR>
+      </table>
+    </b> <b> </div>
+  <div class="c">
+    <button class="key" onclick="key('q')" id="q">Q</button>
+    <button class="key" onclick="key('w')" id="w">W</button>
+    <button class="key" onclick="key('e')" id="e">E</button>
+    <button class="key" onclick="key('r')" id="r">R</button>
+    <button class="key" onclick="key('t')" id="t">T</button>
+    <button class="key" onclick="key('y')" id="y">Y</button>
+    <button class="key" onclick="key('u')" id="u">U</button>
+    <button class="key" onclick="key('i')" id="i">I</button>
+    <button class="key" onclick="key('o')" id="o">O</button>
+    <button class="key" onclick="key('p')" id="p">P</button><BR>
 
-  <button class="key"  onclick="key('a')"id="a">A</button>
-  <button class="key"  onclick="key('s')"id="s">S</button>
-  <button class="key"  onclick="key('d')"id="d">D</button>
-  <button class="key"  onclick="key('f')"id="f">F</button>
-  <button class="key"  onclick="key('g')"id="g">G</button>
-  <button class="key"  onclick="key('h')"id="h">H</button>
-  <button class="key"  onclick="key('j')"id="j">J</button>
-  <button class="key"  onclick="key('k')"id="k">K</button>
-  <button class="key"  onclick="key('l')"id="l">L</button><br>
+    <button class="key" onclick="key('a')" id="a">A</button>
+    <button class="key" onclick="key('s')" id="s">S</button>
+    <button class="key" onclick="key('d')" id="d">D</button>
+    <button class="key" onclick="key('f')" id="f">F</button>
+    <button class="key" onclick="key('g')" id="g">G</button>
+    <button class="key" onclick="key('h')" id="h">H</button>
+    <button class="key" onclick="key('j')" id="j">J</button>
+    <button class="key" onclick="key('k')" id="k">K</button>
+    <button class="key" onclick="key('l')" id="l">L</button><br>
 
-  <button class="key enter"  onclick="back()"id="back"><-</button>
-  <button class="key"  onclick="key('z')"id="z">Z</button>
-  <button class="key"  onclick="key('x')"id="x">X</button>
-  <button class="key"  onclick="key('c')"id="c">C</button>
-  <button class="key"  onclick="key('v')"id="v">V</button>
-  <button class="key"  onclick="key('b')"id="b">B</button>
-  <button class="key"  onclick="key('n')"id="n">N</button>
-  <button class="key"  onclick="key('m')"id="m">M</button>
-  <button class="key enter"  onclick="checks()"id="en"><img src="enter.svg" width="20vw" ></button></div>
+    <button class="key enter" onclick="back()" id="back">
+      <-- </button>
+        <button class="key" onclick="key('z')" id="z">Z</button>
+        <button class="key" onclick="key('x')" id="x">X</button>
+        <button class="key" onclick="key('c')" id="c">C</button>
+        <button class="key" onclick="key('v')" id="v">V</button>
+        <button class="key" onclick="key('b')" id="b">B</button>
+        <button class="key" onclick="key('n')" id="n">N</button>
+        <button class="key" onclick="key('m')" id="m">M</button>
+        <button class="key enter" onclick="checks()" id="en"><img src="enter.svg" width="20vw"></button>
+  </div>
 
   <div class="nope" id="nope">
-  Not A Word
-</div>
-<div class="nope" id="fe">
-  must be 5 letters long
-</div>
-<div class="yay" id="yay">
-  You Win <br>
-  It took you a <p id="tri"></p><br>
-  you are great the word was <p id="word"></p>
-  <br> Refresh page for a new word
-
-</div>
+    Not A Word
+  </div>
+  <div class="nope" id="fe">
+    must be 5 letters long
+  </div>
+  <div class="yay" id="yay">
+    You Win <br>
+    It took you a <p id="tri"></p><br>
+    you are great the word was <p id="word"></p><button onclick="navigator.clipboard.writeText(results)">copy
+      results</button>
+    <br> come tommorow for a new word<br>
+  </div>
 </body>
+
 </html>

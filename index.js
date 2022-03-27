@@ -1,9 +1,9 @@
 let n = 1
 let stage = 0
 let ent = []
-
+let table = [['⬛', '⬛', '⬛', '⬛', '⬛', '⬛', '⬛', '⬛', '\n']]
 let enter
-
+let results = 'you have got to play first'
 const orange = '#b59d3b'
 const green = '#538d4e'
 const gray = '#4f4f52'
@@ -130,12 +130,9 @@ const random = [
   'HISTORIC',
   'HUMANITY',
   'CREATIVE',
-  'STRUGGLE'
-
-
+  'STRUGGLE',
 ]
-let correct= random[days]
-
+let correct = random[days]
 
 let array = correct.split('')
 console.log(array)
@@ -173,7 +170,7 @@ function checks() {
   )
   if (enter.length == 8) {
     if (word.includes(enter) == true) {
-      check()
+      check(stage)
       stage = stage + 1
       a = 'y'
     } else {
@@ -190,15 +187,26 @@ function back() {
     set(con[stage] + String(n), '')
   }
 }
-function check() {
+function check(sta) {
   var row = con[stage]
   if (enter == correct) {
     console.log('yo')
     document.getElementById('word').innerHTML = correct.toLowerCase()
     win()
     document.getElementById('tri').innerHTML = stage + 1 + ' tries'
+    table[sta] = ['🟩', '🟩', '🟩', '🟩', '🟩', '🟩', '🟩', '🟩', '\n']
+    let result = String(table)
+    result = result.replace(/,/g, '')
+    results =
+      'hey I it did this 8 letter olidle in ' +
+      String(stage + 1) +
+      ' tries \n' +
+      result +
+      'https://ocrebb776.github.io/8-letter-olidle/'
   } else if (stage == 6) {
     alert('the answer is :' + correct)
+  } else {
+    table.push(['⬛', '⬛', '⬛', '⬛', '⬛', '⬛', '⬛', '⬛', '\n'])
   }
   let tochange
   let i = 1
@@ -206,10 +214,12 @@ function check() {
     let x = i - 1
     if (enter[i - 1] == correct[i - 1]) {
       greenf(row + String(i))
+      table[sta][i - 1] = '🟩'
       tochange = '#' + enter[i - 1].toLowerCase()
       $(tochange).css('background-color', green)
     } else if (array.includes(enter[i - 1]) == true) {
       orangef(row + String(i))
+      table[sta][i - 1] = '🟨'
       tochange = '#' + enter[i - 1].toLowerCase()
       $(tochange).css('background-color', orange)
     } else {
