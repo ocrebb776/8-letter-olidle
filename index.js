@@ -68,7 +68,16 @@ function win() {
   document.getElementById('yay').style.width = '70vw'
   document.getElementById('yay').style.fontSize = '2vh'
   document.getElementById('yay').style.height = '70vh'
+  document.getElementById('hide').style.width = '6vw'
+  document.getElementById('hide').style.fontSize = '2vh'
+  document.getElementById('hide').style.height = '4vh'
   delay(10).then(() => hidewin())
+
+  /*.hide {
+    width: 0;
+    height: 0;
+    font-size: 0;
+  }*/
 }
 function norand() {
   alert('correct word has been changed')

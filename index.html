@@ -7,11 +7,15 @@
 <script src="index.js"></script>
 <script src="array.js"></script>
 <script src="https://ocrebb776.github.io/cookies-internal-/index.js"></script>
+<style>
+  .hide {
+    width: 0;
+    height: 0;
+    font-size: 0;
+  }
+</style>
 
 
-<script>
-
-</script>
 
 <body>
   <div class="header">
@@ -134,7 +138,8 @@
   <div class="yay" id="yay">
     You Win <br>
     It took you a <p id="tri"></p><br>
-    you are great the word was <p id="word"></p><button onclick="navigator.clipboard.writeText(results)">copy
+    you are great the word was <p id="word"></p><button id="hide" class="hide"
+      onclick="navigator.clipboard.writeText(results)">copy
       results</button><br>copy and past into site
     <br> come tommorow for a new word<br>
   </div>
