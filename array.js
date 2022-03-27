@@ -1,5 +1,5 @@
 const word = [
-'AEIOURGT'
+'AEIOURGT',
   'AARDVARK',
   'AARDWOLF',
   'AASVOGEL',
@@ -42149,5 +42149,5 @@ const word = [
   'ZYMOLOGY',
   'ZYMOSANS',
   'ZYMOTICS',
-  'ZYZZYVAS',
+  'ZYZZYVAS'
 ]

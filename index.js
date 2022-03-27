@@ -1,9 +1,19 @@
+let n = 1
+let stage = 0
+let ent = []
+
+let enter
+
+const orange = '#b59d3b'
+const green = '#538d4e'
+const gray = '#4f4f52'
+const con = ['a', 'b', 'c', 'd', 'e', 'f']
 var current_date, epocDate
 current_date = new Date()
 var epocDate = new Date(new Date().getTime() / 1000)
 var res = Math.abs(current_date - epocDate) / 1000
 let days = Math.floor(res / 86400)
-days -= 19015
+days -= 19059
 function orangef(cell) {
   document.getElementById(cell).style.backgroundColor = orange
   document.getElementById(cell).style.border = orange
@@ -70,7 +80,6 @@ const random = [
   'ABSOLUTE',
   'CRITICAL',
   'CELLULAR',
-  'ROSEWORM',
   'ASSESSED',
   'HONESTLY',
   'CALENDAR',
@@ -84,6 +93,7 @@ const random = [
   'AARDVARK',
   'COMPARER',
   'SINGULAR',
+  'HONESTLY',
   'STALKING',
   'UNSETTLE',
   'EMPHASIS',
@@ -101,95 +111,34 @@ const random = [
   'EMPERESS',
   'VISITING',
   'VALUABLE',
-  'ABSOLUTE',
-  'CRITICAL',
-  'CELLULAR',
-  'ROSEWORM',
-  'ASSESSED',
-  'HONESTLY',
-  'CALENDAR',
-  'CLASSMAN',
-  'SALIVATE',
-  'PUNCTURE',
-  'CULPRITS',
-  'CUITTLED',
-  'ABROOKED',
-  'ABJECTED',
-  'AARDVARK',
-  'COMPARER',
-  'SINGULAR',
-  'STALKING',
-  'UNSETTLE',
-  'EMPHASIS',
-  'SHORTAGE',
-  'SHUFFLED',
-  'PARANOID',
-  'VELOSITY',
-  'ATTACKED',
-  'CHAMPION',
-  'EXERSIZE',
-  'DESCRIBE',
+  'ADEQUATE',
   'ALTHOUGH',
-  'GREETING',
-  'DAUGHTER',
-  'EMPERESS',
-  'VISITING',
-  'VALUABLE',
-  'ABSOLUTE',
-  'CRITICAL',
-  'CELLULAR',
-  'ROSEWORM',
-  'ASSESSED',
-  'HONESTLY',
-  'CALENDAR',
-  'CLASSMAN',
-  'SALIVATE',
-  'PUNCTURE',
-  'CULPRITS',
-  'CUITTLED',
-  'ABROOKED',
-  'ABJECTED',
-  'AARDVARK',
-  'COMPARER',
-  'SINGULAR',
-  'STALKING',
-  'UNSETTLE',
-  'EMPHASIS',
-  'SHORTAGE',
-  'SHUFFLED',
-  'PARANOID',
-  'VELOSITY',
-  'ATTACKED',
-  'CHAMPION',
-  'EXERSIZE',
+  'ARGUMENT',
+  'BIRTHDAY',
+  'CATHOLIC',
+  'CAUTIOUS',
+  'CATEGORY',
+  'COMPUTER',
+  'DAYLIGHT',
   'DESCRIBE',
-  'ALTHOUGH',
-  'GREETING',
-  'DAUGHTER',
-  'EMPERESS',
-  'VISITING',
-  'VALUABLE',
+  'FORMERLY',
+  'FUNCTION',
+  'EXCITING',
+  'FOOTBALL',
+  'IMPERIAL',
+  'INCIDENT',
+  'HISTORIC',
+  'HUMANITY',
+  'CREATIVE',
+  'STRUGGLE'
+
+
 ]
-let correct
-let isrand = 'no'
-if (isrand == 'no') {
-  if (days < random.length) {
-    correct = random[days]
-  } else {
-    alert('we do not have any words for today')
-  }
-}
-let stage = 0
-let ent = []
+let correct= random[days]
+
+
 let array = correct.split('')
 console.log(array)
-let enter
-
-const orange = '#b59d3b'
-const green = '#538d4e'
-const gray = '#4f4f52'
-const con = ['a', 'b', 'c', 'd', 'e', 'f']
-
 let keygray
 /*
 function display(rows) {
@@ -210,7 +159,6 @@ function display(rows) {
     alert('must be 5 letters long')
   }
 }*/
-let n = 1
 function key(press) {
   if (n < 9) {
     press = press.toUpperCase()
