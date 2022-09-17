@@ -13,7 +13,7 @@ current_date = new Date()
 var epocDate = new Date(new Date().getTime() / 1000)
 var res = Math.abs(current_date - epocDate) / 1000
 let days = Math.floor(res / 86400)
-days -= 19059
+days -= 19252
 function orangef(cell) {
   document.getElementById(cell).style.backgroundColor = orange
   document.getElementById(cell).style.border = orange
